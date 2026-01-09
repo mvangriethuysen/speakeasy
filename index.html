@@ -4,10 +4,9 @@
   <meta charset="UTF-8">
   <title>Plan B Speakeasy</title>
   <style>
-    /* Algemeen */
     body {
-      background-color: #1a1a1a; /* donker, mysterieus */
-      color: #ffd700; /* goudkleurige highlights */
+      background-color: #1a1a1a;
+      color: #ffd700;
       font-family: 'Courier New', monospace;
       display: flex;
       flex-direction: column;
@@ -44,22 +43,23 @@
 
   <div class="countdown" id="countdown"></div>
 
+  <p>Save the date: <strong>7 maart 18:00</strong></p>
   <p>Meer informatie volgt op: <strong>29 januari 20:00</strong></p>
 
   <p>RSVP: <a href="mailto:planb@example.com">planb@example.com</a></p>
-  <p>Telefoon: <a href="tel:+31000000000">+31 0 000 000 000</a></p>
+  <p>Telefoon: <a href="tel:+31625743021">06-25743021</a></p>
 
   <script>
-    // Countdown timer
+    // Countdown timer naar 29 januari 20:00
     const countdownElement = document.getElementById("countdown");
-    const eventDate = new Date("March 7, 2026 18:00:00").getTime();
+    const eventDate = new Date("January 29, 2026 20:00:00").getTime();
 
     function updateCountdown() {
       const now = new Date().getTime();
       const distance = eventDate - now;
 
       if (distance < 0) {
-        countdownElement.innerHTML = "Het feest is begonnen!";
+        countdownElement.innerHTML = "Meer informatie is beschikbaar!";
         return;
       }
 
