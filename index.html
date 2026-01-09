@@ -28,7 +28,7 @@
       margin: 0.5em 0;
     }
 
-    p.story {
+    .story {
       font-style: italic;
       font-size: 1em;
       max-width: 600px;
@@ -49,6 +49,11 @@
       color: #ffd700;
       text-decoration: underline;
     }
+
+    .spacer {
+      height: 50px; /* hoogte van de lege ruimte */
+      width: 100%;  /* vult de breedte */
+    }
   </style>
 </head>
 <body>
@@ -58,7 +63,12 @@
   Alleen uitgenodigde gasten mogen toetreden. <br>
   Je aanwezigheid is gewents op een exclusief avondje vol geheimen, jazz en... moord.<br>
   <p class="story">Zet deze datum in je agenda: <strong>7 maart 18:00</strong>.</p>
+  
+  <div class="spacer"></div>
+  
   <p>Meer informatie volgt over:<br> <div class="countdown" id="countdown"></div></p>
+  
+  <div class="spacer"></div>
 
   <p>Laat voor 20 januari weten of je kan komen door een berichtje te sturen naar: <strong>planb@example.com</strong></p>
 
