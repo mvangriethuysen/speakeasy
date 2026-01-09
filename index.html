@@ -24,7 +24,14 @@
 
     p {
       font-size: 1.2em;
-      margin: 0.2em 0;
+      margin: 0.5em 0;
+    }
+
+    p.story {
+      font-style: italic;
+      font-size: 1.3em;
+      max-width: 600px;
+      margin-bottom: 1.5em; /* afstand tussen paragrafen */
     }
 
     .countdown {
@@ -46,7 +53,9 @@
 <body>
   <img src="Speakeasy.png" alt="PlanB Speakeasy">
   <h1>Welkom gasten</h1>
-  <p>Je hebt onze geheime toegang ontdekt. Alleen uitgenodigde gasten mogen toetreden. Je aanwezigheid is gewents op een exclusief avondje vol geheimen, jazz en... moord.</p>
+  <p class="story">Je hebt onze geheime toegang ontdekt. </p>
+  <p class="story">Alleen uitgenodigde gasten mogen toetreden. </p>
+  <p class="story"> Je aanwezigheid is gewents op een exclusief avondje vol geheimen, jazz en... moord.</p>
   <p>Zet deze datum in je agenda: <strong>7 maart 18:00</strong>. Meer informatie volgt over:</p>
 
   <div class="countdown" id="countdown"></div>
